@@ -39,7 +39,6 @@ const controlSearch = async () =>{
             clearLoader();
             searchView.renderResults(state.search.result);
         }catch(err){
-            alert("Something wrong with the search");
             clearLoader();
         }
     }
@@ -72,7 +71,7 @@ const controlRecipe = async () =>{
             clearLoader();
             recipeView.renderRecipe(state.recipe,state.likes.isLiked(id));
         }catch(err){
-            alert('Error processing recipe');
+            
         }
     }
 };

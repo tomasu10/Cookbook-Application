@@ -14,7 +14,7 @@ export default class Search{
             
         }
         catch(error){
-            alert(error);
+            alert(`${this.query.toUpperCase()} could not be found. Please try again!`);
         }   
         
     }

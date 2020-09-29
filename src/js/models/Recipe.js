@@ -16,7 +16,7 @@ export default class Recipe{
             this.url = res.data.recipe.source_url;
             this.ingredients = res.data.recipe.ingredients;
         }catch(error){
-            alert(error);
+            alert('Error processing recipe'); 
         }
     }
     //Method calculate time needed to make recipe. Estimate 15 mins per every 3 ingredients
